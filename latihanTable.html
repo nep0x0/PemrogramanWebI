@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar Tabel HTML 5</title>
+    <style>
+        .seling{
+            width: 100%;
+            border: 3px solid #fd79a8;
+            border-collapse: collapse;
+        }
+        .selingth{
+            text-align: left;
+        }
+        .selingth, .selingtd{
+            border-right: 3px solid #fd79a8;
+        }
+        .selingtr:nth-child(even){
+            background-color: #eea8c1;
+        }
+    </style>
+</head>
+<body>
+    <table border="0" bgcolor="yellow"> 
+        <tr>
+            <th>Nama Depan</th>
+            <th>Nama Belakang</th>
+            <th>Umur / Usia</th>
+        </tr>
+        <tr bgcolor="white">
+            <td>Tony</td>
+            <td>Fernandes</td>
+            <td>23</td>
+        </tr>
+        <tr>
+            <td>Isabel</td>
+            <td>Menali</td>
+            <td>16</td>
+        </tr>
+        <tr bgcolor="white">
+            <td>Victoria</td>
+            <td>Lisabel</td>
+            <td>16</td>
+        </tr>
+    </table>
+    <br>
+    <table border=1 cellpadding=5 cellspacing=0> 
+        <tr>
+            <th>Bulan</th>
+            <th>Tabungan</th>
+            <th>Untuk Liburan</th>
+        </tr>
+        <tr>
+            <td>January</td>
+            <td>500 ribu</td>
+            <td rowspan="2">Total Rp 1.100.000</td>
+        </tr>
+        <tr>
+            <td>February</td>
+            <td>600 ribu</td>
+        </tr>
+    </table>
+    <br>
+    <table align="center" width="100%" border=1 cellpadding=10 cellspacing=0> 
+        <tr>
+            <th>Bulan</th>
+            <th>Tabungan</th>
+        </tr>
+        <tr>
+            <td>January</td>
+            <td>500 ribu</td>
+        </tr>
+        <tr>
+            <td>February</td>
+            <td>600 ribu</td>
+        </tr>
+        <tr>
+            <td bgcolor="yellow" align="center" colspan="2"><strong>Total Tabungan 1 juta</strong></td>
+        </tr>
+    </table>
+
+    <br>
+    <table class="seling"> 
+        <tr class="selingtr">
+            <th class="selingth">Bulan</th>
+            <th class="selingth">Tabungan</th>
+        </tr>
+        <tr class="selingtr">
+            <td class="selingtd">January</td>
+            <td class="selingtd">500 ribu</td>
+        </tr>
+        <tr class="selingtr">
+            <td class="selingtd">February</td>
+            <td class="selingtd">600 ribu</td>
+        </tr>
+        <tr class="selingtr">
+            <td class="selingtd">Maret</td>
+            <td class="selingtd">600 ribu</td>
+        </tr>
+        <tr class="selingtr">
+            <td class="selingtd">April</td>
+            <td class="selingtd">600 ribu</td>
+        </tr>
+        <tr class="selingtr">
+            <td class="selingtd" colspan="2" align="center"><strong>Tabungan 1 juta</strong></td>
+        </tr>
+    </table>
+</body>
+</html>
